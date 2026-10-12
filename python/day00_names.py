@@ -44,5 +44,16 @@ def update(items, label):
 nums = [1, 2, 3]
 tag = "hi"
 update(nums, tag)      
-print(nums)     # prints [1, 2, 3, 4]
-print(tag)      # prints "hi!"
+# print(nums)     # prints [1, 2, 3, 4]
+# print(tag)      # prints "hi!"
+
+
+a = [1, 2]
+print(id(a))
+a += [3]
+print(id(a))   # same id → same object → mutated
+
+s = "hi"
+print(id(s))
+s += "!"
+print(id(s))   # different id → new object → rebound
